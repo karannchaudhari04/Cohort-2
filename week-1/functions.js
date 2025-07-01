@@ -19,18 +19,25 @@ console.log(value2);
 
 
 //This is a function callback example. Where you can call a function inside another function.
-function sum(num1, num2, callfunc){
-    let result = num1 + num2;
-    callfunc(result);
+function arithmatic(num1, num2, callfunc){
+    let result = callfunc(num1, num2);
+    console.log("The result is: "+result);
 }
 
 
-function displaySum(data){
-    console.log("The sum is: " + data);
+function sum(num1, num2){
+    return num1 + num2;
 }
 
-function sumDisplay(data){
-    console.log("The sum is: " + data);
+function sub(num1, num2){
+    return num1 - num2;
 }
 
-let ans = sum(12,5, displaySum);
+function mul(num1, num2){
+    return num1 * num2;
+}
+function div(num1, num2){
+    return num1 / num2;
+}
+
+let ans = arithmatic(12,15, sum);
