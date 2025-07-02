@@ -41,3 +41,10 @@ function div(num1, num2){
 }
 
 let ans = arithmatic(12,15, sum);
+
+
+function greet() {
+    console.log("Hello Everyone!");
+}
+
+setTimeout(greet, 2000);
