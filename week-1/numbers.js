@@ -7,6 +7,7 @@ function parseIntExample(str) {
 }
 parseIntExample("123abc");
 
+
 // Simple demonstrate of parseInteger
 
 console.log(parseInt("123abc"));
